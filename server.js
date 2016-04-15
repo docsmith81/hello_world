@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 		var line = JSON.parse(rows);
 		if (!err)
 			//res.send('My name is ', alert(line['first_name']), alert(line['last_name']), ' and I make ',  alert(line['salary']), ' as a ', alert(line['position']));
-			res.send('My name is ', line);
+			res.send('My name is ', line['first_name']);
 		else
 			res.send('Error while performing Query.');
 	});
