@@ -12,10 +12,10 @@ var connection = mysql.createConnection({
 
 app.get('/', function (req, res) {
 	res.send('Hello World!');
-	connection.query('SELECT first_name,last_name from helloworld.employees ORDER BY RAND() LIMIT 1', function(err, rows, fields) {
-		if (err) throw err;
-		res.send('My name is ', rows[0]);
-	});
+	//connection.query('SELECT first_name,last_name from helloworld.employees ORDER BY RAND() LIMIT 1', function(err, rows, fields) {
+	//	if (err) throw err;
+	//	res.send('My name is ', rows[0]);
+	//});
 });
 
 app.listen(80, function () {
