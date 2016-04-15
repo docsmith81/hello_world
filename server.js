@@ -11,9 +11,12 @@ var connection = mysql.createConnection({
 });
 
 app.get('/', function (req, res) {
-	res.send('Hello World!');
+	//res.send('Hello World!');
 	connection.query('SELECT first_name,last_name from helloworld.employees ORDER BY RAND() LIMIT 1', function(err, rows, fields) {
-		res.send('My name is ', rows[0]);
+		if (!err)
+			res.send('The solution is: ', rows);
+		else
+			res.send('Error while performing Query.');
 	});
 });
 
