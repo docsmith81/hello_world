@@ -5,7 +5,8 @@
   "dependencies": {
     "express": "*",
     "ejs": "*",
-    "mysql": "*"
+    "mysql": "*",
+    "json": "*"
   },
   "scripts": {
     "start": "node server.js"
