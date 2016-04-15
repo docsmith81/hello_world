@@ -1,0 +1,10 @@
+{
+  "name": "HelloWorld",
+  "description": "Hello World Node Dependencies",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "mysql": "*"
+  }
+}
