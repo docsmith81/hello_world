@@ -1,10 +1,24 @@
 {
-  "name": "HelloWorld",
+  "name": "hello_world",
   "description": "Hello World Node Dependencies",
   "version": "0.0.1",
   "dependencies": {
     "express": "*",
     "ejs": "*",
     "mysql": "*"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docsmith81/hello_world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/docsmith81/hello_world/issues"
+  },
+  "homepage": "https://github.com/docsmith81/hello_world#readme"
 }
